@@ -35,9 +35,6 @@
                 </button>
                 </div>
                 <ul class="nav navbar-nav navbar-right collapse navbar-collapse">
-                    <li><a href='/'>Home</a></li>
-                    <li><a href='tickets.html'>Tickets</a></li>
-                    <li><a href='stations.html'>Stations</a></li>
 
                     <!-- A Dropdown Menu -->
 
@@ -45,8 +42,8 @@
                     	<a href="about.html" data-target="#" data-toggle="dropdown">  <!-- Boostrap adds a class of .open -->
                     	About <span class="caret"></span></a>
                     	<ul class="dropdown-menu">
-                    		<li><a href="story.html">Our Story</a></li>
-                    		<li><a href="contact.html">Contact Us</a></li>
+                    		<li><a href="story.html">My Story</a></li>
+                    		<li><a href="contact.html">Contact</a></li>
                     		<li class="divider"></li>
                     		<li><a href="blog.html">Blog</a></li>
                     		<li class="divider"></li>
@@ -54,6 +51,23 @@
                     		<li><a href="http://www.twitter.com">Twitter</a></li>
                     	</ul>
                     </li>
+
+                    <li> <!-- Adding a class of .open will have this menu open automatically on page load -->
+                    	<a href="about.html" data-target="#" data-toggle="dropdown">  <!-- Boostrap adds a class of .open -->
+                    	Portfolio <span class="caret"></span></a>
+                    	<ul class="dropdown-menu">
+                    		<li class="dropdown-header">My Work</li>
+                    		<li><a href="web.html">Web</a></li>
+                    		<li><a href="grahpics.html">Graphics</a></li>
+                    		<li><a href="photo.html">Photography</a></li>
+                    		<li><a href="video.html">Film</a></li>
+                    		<li class="dropdown-header">UI/UX</li>
+                    		<li><a href="wireframe.html">Wireframe</a></li>
+                    		<li class="dropdown-header">Sketch</li>
+                    		<li><a href="wireframe.html">Scratchpad</a></li>
+                    	</ul>
+                    </li>
+                    <li><a href='clients.html'>Clients</a></li>
                 </ul>
                 </div>
             </div>
@@ -64,26 +78,36 @@
       <div class='container'>
 	      <div class='row'>
 	        <div class='col-md-8'>
-	          <h2>Plan Your Trip Today!</h2>
+	          <h2><a href="index.html">Bootstrap-example</a></h2>
 
-	          <ul class='nav nav-tabs'>
-	            <li class='active'><a href='#time'>Todays Times</a></li>
-	            <li><a href='#deals'>Hot Deals</a></li>
-	            <li><a href='#forecast'>Forecast</a></li>
-	          </ul>
+			  <!-- Nav tabs -->
+			  <ul class="nav nav-tabs" role="tablist">
+			    <li role="presentation" class="active"><a href="#memo" aria-controls="memo" role="tab" data-toggle="tab">Schedule</a></li>
+			    <li role="presentation"><a href="#notes" aria-controls="notes" role="tab" data-toggle="tab">Notes</a></li>
+			    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+			  </ul>
 
-	          <div class='tab-content'>
-	            <div class='tab-pane fade active' id='time'>
-	              <p>Todays Time here</p>
-	            </div>
-	            <div class='tab-pane fade' id='deals'>
-	              <p>Deals here</p>
-	            </div>
-	            <div class='tab-pane fade' id='forecast'>
-	              <p>Forecast</p>
-	            </div>
-	          </div>
+			  <!-- Tab panes -->
+			  <div class="tab-content">
+			    <div role="tabpanel" class="tab-pane fade in active" id="schedule">...<br>...<br>...<br>...<br>...
+			        <a href="https://github.com/granam180/bootstrap-example" target="_blank">
+			        	Refer to My GitHub bootstrap-example
+			        </a><br>...<br></div>
+			    <div role="tabpanel" class="tab-pane fade" id="notes">
+			    	<ul>
+			    		<li class="unstyled">Gotta do this thing</li>
+			    		<li class="unstyled">Gotta do that thing</li>
+			    		<li class="unstyled">Gotta do this thing</li>
+			    		<li class="unstyled">Gotta do that thing</li>
+			    		<li class="unstyled">Gotta do this thing</li>
+			    		<li class="unstyled">Gotta do that thing</li>
+			    	</ul>
+			    </div>
+			    <div role="tabpanel" class="tab-pane fade" id="messages">you have "0" messages</div>
+			  </div>
 	        </div>
+
+	        <!-- Right side slider tabs -->
 	        <div class='col-md-3 col-md-offset-1'>
 	          <div class='panel-group'>
 	            <div class='panel panel-success'>
@@ -147,7 +171,6 @@
     </div>
 
     <!-- Content are pt.2 -->
-
         <div class="container">
         <div class="row well well-lg">
             <h2>Write Easier Notes</h2>
