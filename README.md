@@ -1,3 +1,4 @@
-# Strap on those boots and hog-tie those classnames!
+# Bootstrap-demo
 
-open-ended project utilizing Bootstrap's responsive framework
+This is an open-ended project utilizing Bootstrap's responsive framework.
+* Might end up being a template for a future web app project
